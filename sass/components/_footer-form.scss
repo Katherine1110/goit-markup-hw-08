@@ -1,0 +1,75 @@
+.form {
+    display: flex;
+    flex-direction: row;
+
+    .email {
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        background: $footer-bg-color;
+    
+        width: 358px;
+    
+        margin-right: 12px;
+        padding-left: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    
+        color: $caption-text-color;
+    }
+}
+
+.signup-btn {
+    display: inline-flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-transform: capitalize;
+
+    padding: 13px 28px;
+
+    align-items: center;
+    color: $caption-text-color;
+    outline-color: $accent-text-color;
+    border-color: transparent;
+
+    width: 200px;
+    height: 50px;
+    background-color: $accent-text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    transition: background-color 500ms $timing-function;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        transition: background-color 500ms $timing-function;
+        background-color: $caption-text-color;
+        color: $accent-text-color;
+    }
+
+    &:hover .send,
+    &:focus .send {
+    fill: $accent-text-color;
+}
+}
+
+.send {
+    fill: $caption-text-color;
+    margin-left: 10px;
+}
+
+.caption-dev {
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.4);
+
+    padding-top: 18px;
+    padding-bottom: 21px;
+    margin-bottom: 0;
+}

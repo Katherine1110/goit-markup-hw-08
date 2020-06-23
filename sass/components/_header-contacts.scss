@@ -1,0 +1,64 @@
+.contacts {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+        .link:not(:last-child) {
+            margin-right: 50px;
+        }
+}
+
+
+.contacts .contacts-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+    text-decoration: none;
+
+    transition: color 250ms $timing-function;
+
+        &:hover,
+        &:focus {
+            color: $accent-text-color;
+        }
+}
+
+.contacts-link {
+    .envelope {
+        width: 16px;
+        height: 11px;
+        margin-right: 10px;
+        fill: $main-text-color;
+
+        transition: fill 250ms $timing-function; 
+    }
+
+    .vector {
+        width: 10px;
+        height: 15px;
+        margin-right: 10px; 
+        fill: $main-text-color;
+    
+        transition: fill 250ms $timing-function;    
+    }
+
+    &:hover .envelope,
+    &:focus .envelope,
+    &:hover .vector,
+    &:focus .vector  {
+        fill: $accent-text-color;
+        cursor: pointer;
+    }
+
+    // &:hover .vector,
+    // &:focus .vector {
+    //     fill: $accent-text-color;
+    //     cursor: pointer;
+    // }
+}
+

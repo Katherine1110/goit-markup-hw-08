@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+}
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+}
+
+$main-text-color: #757575;
+$itle-text-color: #212121;
+$accent-text-color: #2196F3;
+$caption-text-color: #FFFFFF;
+$button-bg-color: #F5F4FA;
+$footer-bg-color: #2F303A;
+$main-network-color: #AFB1B8;
+
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$font: Roboto, sans-serif;
+$font-size: 14px;
+$line-height: 1.14;
+$letter-spacing: 0.02em;
+$padding-top: 80px;
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  /* outline: 2px solid red; */
+}
+
+// body {
+//     font-family: Roboto, sans-serif;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     padding-top: 80px;
+// }

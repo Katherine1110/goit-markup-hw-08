@@ -1,0 +1,94 @@
+.team-section {
+    background-color: $button-bg-color;
+}
+
+.team {
+    /* outline: 2px solid red; */
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+} 
+
+.team-list {
+    .team-pic {
+        margin-bottom: 30px;
+    }
+
+    .team-list-title {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: $itle-text-color;
+        text-align: center;
+
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.team-list {
+    $margin: 90px;
+    width: calc((100% - #{$margin}) / 4);
+
+    background: $caption-text-color;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    padding-bottom: 24px;
+
+    .main-text {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 30px;
+
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        color: $main-text-color;
+    }
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.team-networks {
+    list-style: none;
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    cursor: pointer;
+}
+
+.network-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    background-color: $caption-text-color;
+    
+    transition: background-color 250ms $timing-function;
+
+    .network-icon {
+        fill: $main-network-color;
+    
+        transition: fill 250ms $timing-function;
+    }
+}
+
+.network-link {
+    &:hover .network-icon {
+        fill: $caption-text-color;
+    }
+
+    &:hover {
+        background-color: $accent-text-color;
+    }
+}

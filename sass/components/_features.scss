@@ -1,0 +1,150 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    /* outline: 2px solid red; */
+}
+
+.logic-title {
+    /* Удаляем элемент из потока документа */
+    position: absolute;
+    /* Устанавливаем минимально возможный размер (некоторые скринридеры игнорируют элементы с нулевой высотой и шириной) */
+    width: 1px;
+    height: 1px;
+    /* Скрываем вылезающий за границы контент */
+    overflow: hidden;
+    /* Сбрасываем любые свойства, которые могут повлиять на размер элемента */
+    border: 0;
+    padding: 0;
+    /* Вырезаем ту часть контента, которая должна отображаться. */
+    /* Устаревшее свойство clip для старых браузеров */
+    clip: rect(0 0 0 0);
+  }
+
+.list {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.container.features {
+    padding-top: 0;
+}
+
+.features-item {
+/* outline: 2px solid red; */
+/* background-color: var(--button-bg-color); */
+    $margin: 90px;
+    width: calc((100% - #{$margin}) / #{4});
+
+    &:not(:last-child) {
+        margin-right: 30px;
+        }
+}
+
+.background {
+    background-color: $button-bg-color;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features-item {
+    & .features-text {
+        margin-top: 0;
+        margin-bottom: 0;
+
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $main-text-color;
+    }
+
+    & .features-title {
+        margin-top: 0;
+        margin-bottom: 10px;
+
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $itle-text-color;
+    }
+
+}
+
+.title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $itle-text-color;
+}
+
+.features-list {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    display: flex;
+
+        & .features-items {
+            $margin: 60px;
+            width: calc((100% - #{$margin}) / 3);
+            /* outline: 2px solid red; */
+        
+            position: relative;
+        } 
+}
+
+img {
+
+}
+ 
+
+.features-items {
+    & img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }  
+}
+
+
+
+.caption-title {
+    position: absolute;
+
+    // max-width: 100%;
+    width: 100%;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    padding-bottom: 27px;
+    padding-top: 27px;
+    color: $caption-text-color;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
+}

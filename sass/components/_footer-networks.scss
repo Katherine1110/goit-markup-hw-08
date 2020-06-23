@@ -1,0 +1,49 @@
+.footer-title {
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 21px;
+    color: $caption-text-color;
+}
+
+.footer-networks {
+    list-style: none;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    display: flex;
+    /* justify-content: space-between; */
+
+
+}
+
+.footer-network:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-link {
+    width: 44px;
+    height: 44px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    transition: background-color 250ms $timing-function;
+
+    &:hover {
+        background-color: $accent-text-color;
+    }
+}
+
+.footer-network-icon {
+    fill: $caption-text-color;
+}
