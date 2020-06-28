@@ -1,19 +1,46 @@
 .customers {
     list-style: none;
+
     padding-left: 0;
-    display: flex;
-    
     margin-top: 0;
     margin-bottom: 0;
+
+    @media screen and (max-width: 479px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    @media screen and (min-width: $mobile) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 
 .customer-icon {
-    $margin: 150px;
-    width: calc((100% - #{$margin}) / 5);
+    @media screen and (max-width: 479px) {
+        width: 210px;
 
         &:not(:last-child) {
-            margin-right: 30px;
+            margin-bottom: 30px;
         }
+    }
+
+    @media screen and (min-width: $mobile) {
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 6 * 15px) / 3);
+        margin: 15px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 12 * 15px) / 6);
+        margin: 15px;
+    }
 }
 
 .svg-icon {
@@ -27,11 +54,9 @@
     justify-content: center;
     align-items: center;
 
-    width: 170px;
-    height: 90px;
-
     border: 1px solid $main-network-color;
     border-radius: 4px;
+    height: 90px;
 
     transition: border 250ms $timing-function;
 
@@ -44,8 +69,21 @@
     &:hover .svg-icon {
         fill: $accent-text-color;
     }
-}
 
-.customer-link:hover {
-    border-color: $accent-text-color;
+    &:hover {
+        border-color: $accent-text-color;
+    }
+
+    // @media screen and (min-width: $mobile) {
+    //     width: 210px;
+    // }
+
+    // @media screen and (min-width: $tablet) {
+    //     width: 226px;
+    // }
+
+    // @media screen and (min-width: $desktop) {
+    //     width: 170px;
+    // }
+   
 }

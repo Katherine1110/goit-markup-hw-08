@@ -1,21 +1,30 @@
+.footer-address {
+    margin-bottom: 60px;
+    
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        text-align: center;
+    }
+}
+
 .location {
     margin-top: 0;
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $caption-text-color;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .footer-contacts {
-    display: inline-block;
+    // display: inline-block;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
     font-style: normal;
     text-decoration: none;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 
     transition: color 250ms $timing-function;
 
