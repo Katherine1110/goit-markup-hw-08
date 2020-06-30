@@ -1,8 +1,8 @@
 .container {
     margin-right: auto;
     margin-left: auto;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
     padding-right: 15px;
     padding-left: 15px;
 
@@ -24,10 +24,10 @@
         width: $desktop;
     }
 
-    @media screen and (max-width: 1199px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-      }
+    // @media screen and (max-width: 1199px) {
+    //     padding-top: 60px;
+    //     padding-bottom: 60px;
+    //   }
 }
 
 .suggestions {
