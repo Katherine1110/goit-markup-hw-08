@@ -1,82 +1,82 @@
 
-// .logo,
-// .caption-contacts {
-//     text-decoration: none;
-// }
+.logo,
+.caption-contacts {
+    text-decoration: none;
+}
 
-// .header-web {
-//     font-family: Raleway, sans-serif;
-//     font-weight: 700;
-//     font-size: 26px;
-//     line-height: 1.19;
-//     letter-spacing: 0.03em;
-//     color: $accent-text-color;
-// }
+.header-web {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: $accent-text-color;
+}
 
-// .header-studio {
-//     @extend .header-web;
-//     color: $itle-text-color;
-// }
+.header-studio {
+    @extend .header-web;
+    color: $itle-text-color;
+}
 
-// .page-header {
-//     border-bottom: 1px solid #ECECEC;
-//     position: relative;
-// }
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+    position: relative;
+}
 
-// .menu-button {
-//     @media screen and (min-width: $tablet) {
-//         display: none;
-//       }
+.menu-button {
+    @media screen and (min-width: $tablet) {
+        display: none;
+      }
     
-//       display: inline-block;
-//       margin: 0;
-//       padding: 0;
-//       border: none;
-//       background-color: transparent;
-// }
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+}
 
-// .menu-button .icon-cross {
-//     display: none;
-//   }
+.menu-button .icon-cross {
+    display: none;
+  }
   
-//   .menu-button.is-open .icon-cross {
-//     display: block;
-//   }
+  .menu-button.is-open .icon-cross {
+    display: block;
+  }
   
-//   .menu-button.is-open .icon-menu {
-//     display: none;
-//   }
+  .menu-button.is-open .icon-menu {
+    display: none;
+  }
 
-//   .menu-container {
-//     background-color: $caption-text-color;
+  .menu-container {
+    background-color: $caption-text-color;
 
-//     @media screen and (max-width: 767px) {
-//         display: none;
-//         position: absolute;
-//         top: 100%;
-//         left: 0;
-//         width: 100%;
-//         padding-top: 60px;
-//         padding-bottom: 60px;
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
     
-//         &.is-open {
-//           display: block;
-//           position: absolute;
-//           top: 60px;
-//           left: 0;
-//         }
-//       }
+        &.is-open {
+          display: block;
+          position: absolute;
+          top: 60px;
+          left: 0;
+        }
+      }
 
-//       @media screen and (min-width: $tablet) {
-//         display: flex;
-//         align-items: center;
-//       }
+      @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: center;
+      }
     
-//       @media screen and (min-width: 768px) {
-//         display: flex;
-//         // justify-content: space-between;
-//         // flex-grow: 1;
-//       }
-//   }
+      @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+      }
+  }
 
 

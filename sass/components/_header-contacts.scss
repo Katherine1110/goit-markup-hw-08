@@ -1,109 +1,109 @@
-// .contacts {
-//     list-style: none;
-//     padding-left: 0;
-//     // display: flex;
-//     margin-top: 0;
-//     margin-bottom: 0;
+.contacts {
+    list-style: none;
+    padding-left: 0;
+    // display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
 
-//     text-align: center;
+    text-align: center;
     
 
-//         // .link:not(:last-child) {
-//         //     margin-right: 50px;
-//         // }
-// }
+        // .link:not(:last-child) {
+        //     margin-right: 50px;
+        // }
+}
 
-//     @media screen and (max-width: 767px) {
-//         .contacts .link:not(:last-child) {
-//             padding-top: 60px;
-//             margin-bottom: 16px;
-//         }
+    @media screen and (max-width: 767px) {
+        .contacts .link:not(:last-child) {
+            padding-top: 60px;
+            margin-bottom: 16px;
+        }
 
-//         @media screen and (min-width: $tablet) {
-//             // margin-left: 84px;
-//             display: block;
-//           }
-//     }
+        @media screen and (min-width: $tablet) {
+            // margin-left: 84px;
+            display: block;
+          }
+    }
 
 
-// .contacts .contacts-link {
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 1.14;
-//     letter-spacing: 0.02em;
-//     color: $main-text-color;
-//     text-decoration: none;
+.contacts .contacts-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+    text-decoration: none;
 
-//     list-style: none;
-//     padding-left: 0;
-//     // display: flex;
-//     margin-left: auto;
-//     margin-top: 0;
-//     margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    // display: flex;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 
-//     transition: color 250ms $timing-function;
+    transition: color 250ms $timing-function;
 
-//         &:hover,
-//         &:focus {
-//             color: $accent-text-color;
-//         }
-//             // .link:not(:last-child) {
-//             //     margin-right: 50px;
-//             // }
-//     }
+        &:hover,
+        &:focus {
+            color: $accent-text-color;
+        }
+            // .link:not(:last-child) {
+            //     margin-right: 50px;
+            // }
+    }
     
-//     .contacts-link {
-//         .envelope {
-//             width: 16px;
-//             height: 11px;
-//             margin-right: 10px;
-//             fill: $main-text-color;
+    .contacts-link {
+        .envelope {
+            width: 16px;
+            height: 11px;
+            margin-right: 10px;
+            fill: $main-text-color;
     
-//             transition: fill 250ms $timing-function; 
-//         }
+            transition: fill 250ms $timing-function; 
+        }
     
-//         .vector {
-//             width: 10px;
-//             height: 15px;
-//             margin-right: 10px; 
-//             fill: $main-text-color;
+        .vector {
+            width: 10px;
+            height: 15px;
+            margin-right: 10px; 
+            fill: $main-text-color;
         
-//             transition: fill 250ms $timing-function;    
-//         }
+            transition: fill 250ms $timing-function;    
+        }
     
-//         &:hover .envelope,
-//         &:focus .envelope,
-//         &:hover .vector,
-//         &:focus .vector  {
-//             fill: $accent-text-color;
-//             cursor: pointer;
-//         }
-//     }
+        &:hover .envelope,
+        &:focus .envelope,
+        &:hover .vector,
+        &:focus .vector  {
+            fill: $accent-text-color;
+            cursor: pointer;
+        }
+    }
 
-// .contacts-link {
-//     .envelope {
-//         width: 16px;
-//         height: 11px;
-//         margin-right: 10px;
-//         fill: $main-text-color;
+.contacts-link {
+    .envelope {
+        width: 16px;
+        height: 11px;
+        margin-right: 10px;
+        fill: $main-text-color;
 
-//         transition: fill 250ms $timing-function; 
-//     }
+        transition: fill 250ms $timing-function; 
+    }
 
-//     .vector {
-//         width: 10px;
-//         height: 15px;
-//         margin-right: 10px; 
-//         fill: $main-text-color;
+    .vector {
+        width: 10px;
+        height: 15px;
+        margin-right: 10px; 
+        fill: $main-text-color;
     
-//         transition: fill 250ms $timing-function;    
-//     }
+        transition: fill 250ms $timing-function;    
+    }
 
-//     &:hover .envelope,
-//     &:focus .envelope,
-//     &:hover .vector,
-//     &:focus .vector  {
-//         fill: $accent-text-color;
-//         cursor: pointer;
-//     }
-// }
+    &:hover .envelope,
+    &:focus .envelope,
+    &:hover .vector,
+    &:focus .vector  {
+        fill: $accent-text-color;
+        cursor: pointer;
+    }
+}
