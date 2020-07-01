@@ -7,7 +7,7 @@
 
     @media screen and (max-width: 479px) {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
     }
     
@@ -20,11 +20,8 @@
 
 .customer-icon {
     @media screen and (max-width: 479px) {
-        width: 210px;
-
-        &:not(:last-child) {
-            margin-bottom: 30px;
-        }
+        width: calc((100% - 4 * 15px) / 2);
+        margin: 15px;
     }
 
     @media screen and (min-width: $mobile) {

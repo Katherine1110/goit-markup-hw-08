@@ -16,6 +16,11 @@
         pointer-events: none;
         transition: opacity 500ms $timing-function;
     }
+
+    @media screen and (max-width: 479px) {
+        width: 479px;
+    }
+
 }
 
 
@@ -31,6 +36,10 @@
     padding: 40px;
 
     background-color: $caption-text-color;
+
+    @media screen and (max-width: 479px) {
+        width: 450px;
+    }
 
     .modal-title {
         margin-top: 0;

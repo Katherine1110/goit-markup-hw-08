@@ -1,21 +1,14 @@
 .footer {
+    background: $footer-bg-color;
+
     @media screen and (max-width: 479px) {
         width: 479px;
         background: $footer-bg-color;
     }
-
-    background: $footer-bg-color;
     
 
-    .footer-container {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 60px;
-        padding-bottom: 60px;
-
-        @media screen and (max-width: 767px) {
+    & .container {
+        @media screen and (max-width: 1199px) {
             text-align: center;
         }
 
@@ -24,13 +17,6 @@
             flex-wrap: wrap;
             justify-content: space-around;
         }
-    
-        // display: flex;
-        // justify-content: space-between;
-        
-        // align-items: baseline;
-    
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
 
@@ -44,7 +30,7 @@
         font-family: Raleway;
         font-style: normal;
         font-weight: 700;
-        font-size: 22px;
+        font-size: 24px;
         line-height: 1.18;
         letter-spacing: 0.03em;
     
@@ -55,7 +41,7 @@
         font-family: Raleway;
         font-style: normal;
         font-weight: 700;
-        font-size: 22px;
+        font-size: 24px;
         line-height: 1.18;
         letter-spacing: 0.03em;
 

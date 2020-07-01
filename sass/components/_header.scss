@@ -1,26 +1,35 @@
+.page-header {
+  position: relative;
+  border-bottom: 1px solid #ECECEC;
+  @media screen and (max-width: 479px) {
+    width: 479px;
+  }
+}
 
 .logo,
 .caption-contacts {
-    text-decoration: none;
+  text-decoration: none;
+}
+
+.logo {
+  @media screen and (min-width: $tablet) {
+    width: 20%;
+    margin-right: 44px;
+  }
 }
 
 .header-web {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: $accent-text-color;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: $accent-text-color;
 }
 
 .header-studio {
-    @extend .header-web;
-    color: $itle-text-color;
-}
-
-.page-header {
-    border-bottom: 1px solid #ECECEC;
-    position: relative;
+  @extend .header-web;
+  color: $itle-text-color;
 }
 
 .menu-button {
@@ -47,8 +56,9 @@
     display: none;
   }
 
-  .menu-container {
+.menu-container {
     background-color: $caption-text-color;
+    
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -62,21 +72,32 @@
         &.is-open {
           display: block;
           position: absolute;
-          top: 60px;
+          top: 61px;
           left: 0;
         }
-      }
-
-      @media screen and (min-width: $tablet) {
-        display: flex;
-        align-items: center;
-      }
+    }
     
-      @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-        flex-grow: 1;
-      }
-  }
+    @media screen and (min-width: $tablet) {
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // flex-grow: 1;
+    }
+
+    @media screen and (min-width: $desktop) {
+      display: flex;
+      align-items: center;
+    }
+}
+
+      
+    
+//       @media screen and (min-width: 768px) {
+//         display: flex;
+//         justify-content: space-between;
+//         flex-grow: 1;
+//       }
+  
 
 

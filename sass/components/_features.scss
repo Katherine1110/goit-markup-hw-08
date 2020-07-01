@@ -1,40 +1,11 @@
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    // padding-top: 94px;
-    // padding-bottom: 94px;
-    padding-right: 15px;
-    padding-left: 15px;
-
-    // outline: 2px solid red; 
-
-    @media screen and (max-width: 479px) {
-        width: 479px;
-    }
-
-    @media screen and (min-width: $mobile) {
-        width: $mobile;
-    }
-
-    @media screen and (min-width: $tablet) {
-        width: $tablet;
-    }
-
-    @media screen and (min-width: $desktop) {
-        width: $desktop;
-    }
-
-    // @media screen and (max-width: 1199px) {
-    //     padding-top: 60px;
-    //     padding-bottom: 60px;
-    //   }
-}
-
 .suggestions {
     @media screen and (max-width: 1199px) {
         display: none;
       }
 }
+
+.container.advantage,
+.container.features,
 
 .section-title {
     text-align: center;
