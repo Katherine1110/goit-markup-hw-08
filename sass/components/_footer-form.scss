@@ -1,106 +1,91 @@
 .form {
-   display: flex;
-   flex-direction: column;
-
-   @media screen and (min-width: $desktop) {
-       flex-direction: row;
-   }
-
-    .email {
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        background: $footer-bg-color;
-    
-        width: 450px;
-    
-        margin-bottom: 20px;
-        padding-left: 16px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    
-        color: $caption-text-color;
-
-        @media screen and (min-width: $desktop) {
-            margin-bottom: 0;
-            width: 358px;
-            margin-right: 10px;
-        }
-
-        // @media screen and (min-width: $tablet) and (max-width: 1199px) {
-        //     width: 450px;
-        // }
-    } 
-}
-
-.footer .container {
-    @media screen and (min-width: 768px) {
-        width: 768px;
-    }
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
+    display: flex;
+    flex-direction: column;
+ 
     @media screen and (min-width: $desktop) {
-        width: 1200px;
-        // justify-content: space-between;
+        flex-direction: row;
     }
-}
-
-// .signup.footer-title {
-//     @media screen and (min-width: $desktop) {
-//         text-align: left;
-//     }
-// }
-
-.signup-btn {
-    display: inline-flex;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    text-transform: capitalize;
-
-    align-self: center;
-
-    padding: 10px 29px;
-
-    align-items: center;
-    color: $caption-text-color;
-    outline-color: $accent-text-color;
-    border-color: transparent;
-
-    width: 200px;
-    height: 50px;
-
-    background-color: $accent-text-color;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-
-    transition: background-color 500ms $timing-function;
-    cursor: pointer;
-
-    &:hover,
-    &:focus {
-        transition: background-color 500ms $timing-function;
-        background-color: $caption-text-color;
-        color: $accent-text-color;
-    }
-
-    &:hover .send,
-    &:focus .send {
-        fill: $accent-text-color;
-    }
-
-    // @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    //     align-self: center;
-    // }
-}
-
-.send {
-    fill: $caption-text-color;
-    margin-left: 10px;
-}
+ 
+     .email {
+         border: 1px solid rgba(255, 255, 255, 0.3);
+         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+         border-radius: 4px;
+         background: $footer-bg-color;
+     
+         width: 450px;
+     
+         margin-bottom: 20px;
+         padding-left: 16px;
+         padding-top: 15px;
+         padding-bottom: 15px;
+     
+         color: $caption-text-color;
+ 
+         @media screen and (min-width: $desktop) {
+             margin-bottom: 0;
+             width: 358px;
+             margin-right: 10px;
+         }
+ 
+         // @media screen and (min-width: $tablet) and (max-width: 1199px) {
+         //     width: 450px;
+         // }
+     } 
+ }
+ 
+ 
+//  .signup.footer-title {
+//      @media screen and (min-width: $desktop) {
+//          text-align: left;
+//      }
+//  }
+ 
+ .signup-btn {
+     display: inline-flex;
+     font-style: normal;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 1.87;
+     letter-spacing: 0.06em;
+     text-transform: capitalize;
+ 
+     align-self: center;
+ 
+     padding: 10px 29px;
+ 
+     align-items: center;
+     color: $caption-text-color;
+     outline-color: $accent-text-color;
+     border-color: transparent;
+ 
+     width: 200px;
+     height: 50px;
+ 
+     background-color: $accent-text-color;
+     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+     border-radius: 4px;
+ 
+     transition: background-color 500ms $timing-function;
+     cursor: pointer;
+ 
+     &:hover,
+     &:focus {
+         transition: background-color 500ms $timing-function;
+         background-color: $caption-text-color;
+         color: $accent-text-color;
+     }
+ 
+     &:hover .send,
+     &:focus .send {
+         fill: $accent-text-color;
+     }
+ 
+     // @media screen and (min-width: $tablet) and (max-width: 1199px) {
+     //     align-self: center;
+     // }
+ }
+ 
+ .send {
+     fill: $caption-text-color;
+     margin-left: 10px;
+ }

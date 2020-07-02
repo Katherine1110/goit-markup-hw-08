@@ -1,1 +1,88 @@
-// 
+.filter-container {
+    /* outline: 2px solid red; */
+    // width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+
+    @media screen and (max-width: 479px) {
+        width: 479px;
+    }
+
+    @media screen and (min-width: $mobile) {
+        width: $mobile;
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+        padding-top: 93px;
+        padding-bottom: 94px;
+    }
+}
+
+.filter {
+    list-style: none;
+
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: center;
+
+    margin-bottom: 40px;
+
+    @media screen and (min-width: $tablet) {
+        justify-content: center;
+    }
+}
+
+.filter-item {
+    &:not(:last-child) {
+        margin-right: 8px;
+    }
+
+    &:nth-child(-n + 3) {
+        @media screen and (max-width: 479px) {
+            margin-bottom: 15px;
+        }
+
+        @media screen and (min-width: $mobile){
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.btn {
+    font-weight: 500;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $itle-text-color;
+
+    border-radius: 4px;
+    border: none;
+    background-color: $button-bg-color;
+    text-decoration: none;
+    padding: 6px 22px;
+    cursor: pointer;
+
+    transition: background-color 250ms $timing-function, color 250ms $timing-function, box-shadow 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-text-color;
+        color: $caption-text-color;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+    }
+}
