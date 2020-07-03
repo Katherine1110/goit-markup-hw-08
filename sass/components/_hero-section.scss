@@ -15,7 +15,7 @@
 
 
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/hero-img.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(/../images/hero-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -37,7 +37,7 @@
     screen and (min-resolution: 2dppx),
     screen and (min-width: $tablet) {
        .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/hero-img@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(/../images/hero-img@2x.jpg);
     // background-size: 768px 400px;
 }
 
@@ -47,7 +47,7 @@
     screen and (min-resolution: 288dpi),
     screen and (min-width: $desktop) {
         .hero {
-            background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/hero-img@3x.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(/../images/hero-img@3x.jpg);
             // background-size: 1600px 600px;
     }
 }
