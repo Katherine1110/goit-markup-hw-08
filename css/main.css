@@ -589,6 +589,110 @@ summary {
   cursor: pointer;
 }
 
+.hero {
+  background: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1600px;
+  min-height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../../images/hero-img.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+@media screen and (max-width: 479px) {
+  .hero {
+    width: 479px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+  }
+}
+
+/* 2x-экраны, изображение 640x480 */
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../../images/hero-img@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/hero-img@2x.jpg);
+  }
+  /* 3x-экраны, изображение 960x720 */
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 3), screen and (-webkit-min-device-pixel-ratio: 2) and (min-device-pixel-ratio: 3), screen and (min-resolution: 192dpi) and (min-device-pixel-ratio: 3), screen and (min-resolution: 2dppx) and (min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-device-pixel-ratio: 3), screen and (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3), screen and (min-device-pixel-ratio: 2) and (min-resolution: 3dppx), screen and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 3), screen and (min-resolution: 192dpi) and (min-resolution: 3dppx), screen and (min-resolution: 2dppx) and (min-resolution: 3dppx), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 3), screen and (min-width: 768px) and (min-resolution: 3dppx), screen and (min-device-pixel-ratio: 2) and (min-resolution: 288dpi), screen and (min-resolution: 192dpi) and (min-resolution: 288dpi), screen and (min-resolution: 2dppx) and (min-resolution: 288dpi), screen and (min-width: 768px) and (min-resolution: 288dpi), screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px), screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url(../../images/hero-img@3x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/hero-img@3x.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 768px) {
+  .hero-title {
+    margin-top: 0;
+    margin-bottom: 46px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    white-space: pre-line;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px), screen and (min-width: 768px) and (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.order {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  text-decoration: none;
+  border: transparent;
+  outline-color: #2196F3;
+  min-width: 200px;
+  height: 50px;
+  background: #2196F3;
+  border-radius: 4px;
+  padding: 10px 32px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order:hover, .order:focus {
+  outline: none;
+  background-color: #FFFFFF;
+  color: #2196F3;
+  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -1447,6 +1551,9 @@ textarea:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 1200px) {
