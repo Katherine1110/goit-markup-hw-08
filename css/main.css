@@ -341,6 +341,7 @@ summary {
     top: 100%;
     left: 0;
     width: 100%;
+    height: 453px;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -349,6 +350,7 @@ summary {
     position: absolute;
     top: 61px;
     left: 0;
+    z-index: 1;
   }
 }
 
@@ -1010,7 +1012,6 @@ textarea:focus {
 
 .features-item {
   text-align: center;
-  width: 450px;
   /* outline: 2px solid red; */
 }
 
@@ -1185,6 +1186,9 @@ textarea:focus {
 }
 
 .team-list .team-pic {
+  display: block;
+  width: 100%;
+  height: auto;
   margin-bottom: 30px;
 }
 
@@ -1225,13 +1229,14 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
+}
+
+.team-networks .networks:not(:last-child) {
+  margin-right: 10px;
 }
 
 .network-link {
@@ -1827,6 +1832,12 @@ textarea:focus {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+.portfolio-pic {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .poster {
