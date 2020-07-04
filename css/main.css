@@ -326,6 +326,13 @@ summary {
   display: block;
 }
 
+.menu-button:hover .icon-cross,
+.menu-button:focus .icon-cross,
+.menu-button:hover .icon-menu,
+.menu-button:focus .icon-menu {
+  fill: #2196F3;
+}
+
 .menu-button.is-open .icon-menu {
   display: none;
 }
