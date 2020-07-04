@@ -46,9 +46,10 @@
 //     padding-top: 0;
 // }
 
+
 .features-item {
     text-align: center;
-    width: 450px;
+    // width: 450px;
 
     &:not(:last-child) {
         @media screen and (max-width: 767px) {
@@ -136,26 +137,6 @@
             }
         } 
 }
-
-// img {
-
-// }
- 
-
-// .features-items {
-//     & img {
-//         display: block;
-//         max-width: 100%;
-//         height: auto;
-//         width: 100%;
-//     }
-
-//     &:not(:last-child) {
-//         margin-right: 30px;
-//     }  
-// }
-
-
 
 .caption-title {
     position: absolute;
