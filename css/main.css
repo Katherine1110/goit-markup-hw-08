@@ -514,6 +514,12 @@ summary {
   background: #2196F3;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation-link.curent::after {
+    margin-top: 29px;
+  }
+}
+
 .contacts {
   list-style: none;
   padding-left: 0;
@@ -660,6 +666,7 @@ summary {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #FFFFFF;
     white-space: pre-line;
   }
